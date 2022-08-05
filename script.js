@@ -22,10 +22,23 @@ function generatePassword() {
     window.alert("Character length requirement was not met.  Please enter a number betweek 8 and 128 for password length.");
   }
 
-  var lowerCase = window.prompt("Do you want to include lower case letters?");
-  var upperCase = window.prompt("Do you want to include upper case letters?");
-  var number = window.prompt("Do you want to includes numbers?");
-  var specialCase = window.prompt("Do you want to include special characters?");
+  var lowerCase = window.confirm("Do you want to include lower case letters?");
+  var upperCase = window.confirm("Do you want to include upper case letters?");
+  var number = window.confirm("Do you want to includes numbers?");
+  var specialCase = window.confirm("Do you want to include special characters?");
 
+  if (!lowerCase && !upperCase && !number && !specialCase) {
+    
+  }
 };
 
+generatePassword();
+
+var generateBtn = document.querySelector("#generate");
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
+}
