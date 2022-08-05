@@ -7,3 +7,5 @@ First, to start creating variables for all requirements for a password such as t
 Secondly, to start creating arrays per variable.
 
 Thirdly, to start creating the function for generating the password.
+
+https://msadia27.github.io/password-generator/
